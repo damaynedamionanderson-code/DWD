@@ -1,0 +1,13 @@
+{
+  "name": "damayne-web-design-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Damayne Web Design website with contact form backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

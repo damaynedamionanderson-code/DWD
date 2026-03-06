@@ -1,0 +1,13 @@
+# Node dependencies
+node_modules/
+
+# Runtime data
+/data/*.jsonl
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
