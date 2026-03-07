@@ -1,4 +1,15 @@
 (function () {
+  function resolveApiUrl(pathname) {
+    const { protocol, hostname, port } = window.location;
+    const isStaticDevServer = protocol.startsWith("http") && (port === "5500" || port === "5501");
+
+    if (isStaticDevServer) {
+      return `http://localhost:3000${pathname}`;
+    }
+
+    return pathname;
+  }
+
   const form = document.getElementById("inquiry-form");
   const status = document.getElementById("form-status");
 
@@ -18,7 +29,7 @@
     status.className = "form-status";
 
     try {
-      const response = await fetch("/api/inquiries", {
+      const response = await fetch(resolveApiUrl("/api/inquiries"), {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -36,7 +47,7 @@
       status.textContent = result.message;
       status.className = "form-status success";
     } catch (error) {
-      status.textContent = error.message;
+      status.textContent = error.message || "Unable to submit your inquiry right now. Make sure backend is running on port 3000.";
       status.className = "form-status error";
     } finally {
       submitBtn.disabled = false;
