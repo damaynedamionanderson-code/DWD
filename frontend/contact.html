@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Payment | Damayne Web Design</title>
+  <meta name="description" content="Start your website project with Damayne Web Design. Send your project details and pay your deposit securely." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">DWD</span>
+        Damayne Web Design
+      </a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a class="btn btn-small" href="contact.html">Start Project</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section masthead">
+      <div class="container stack-lg">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Start Your Project</p>
+          <h1>Tell me about your business and website goals.</h1>
+          <p class="lede">Most inquiries receive a response within 24 hours on business days.</p>
+        </header>
+
+        <div class="contact-layout">
+          <section class="card stack-sm" data-reveal>
+            <h2>Project Inquiry</h2>
+            <form id="inquiry-form" class="stack-sm" action="#" method="post">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+              <label for="business">Business Name</label>
+              <input id="business" name="business" type="text" placeholder="Your business" />
+
+              <label for="package">Preferred Package</label>
+              <select id="package" name="package" required>
+                <option value="">Select a package</option>
+                <option value="starter">Starter Site</option>
+                <option value="growth">Growth Site</option>
+                <option value="premium">Premium Site</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+
+              <label for="details">Project Details</label>
+              <textarea id="details" name="details" rows="6" placeholder="What kind of website do you need?" required></textarea>
+
+              <button class="btn" type="submit">Send Inquiry</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </section>
+
+          <aside class="surface card stack-sm" data-reveal>
+            <h2>Deposit &amp; Payment</h2>
+            <p>Secure your project timeline with a 50% deposit after confirming your package.</p>
+            <a class="btn btn-block" href="https://paypal.me/DamayneAnderson15" target="_blank" rel="noopener noreferrer">Pay Deposit via PayPal</a>
+            <a class="btn btn-ghost btn-block" href="https://paypal.me/DamayneAnderson15" target="_blank" rel="noopener noreferrer">Pay Deposit via Stripe</a>
+            <div class="meta-list">
+              <p><strong>Email:</strong> <a href="mailto:damaynedamionanderson@gmail.com">damaynedamionanderson@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+10000000000">(000) 000-0000</a></p>
+              <p><strong>Hours:</strong> Mon-Fri, 9:00 AM - 6:00 PM EST</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Damayne Web Design. All rights reserved.</p>
+      <a href="services.html">View Packages</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/contact-page.js"></script>
+</body>
+</html>
